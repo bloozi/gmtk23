@@ -9,6 +9,15 @@ public class BeatPath : MonoBehaviour
     [SerializeField] private float _moveSpeed;
     private int _pointsIndex;
 
+    public void BeatPathInit(GameObject sPoint, GameObject ePoint, float speed)
+    {
+        Points = new Transform[2];
+        Points[0] = sPoint.transform;
+        Points[1] = ePoint.transform;
+        _moveSpeed = speed;
+    }
+
+
     // Start is called before the first frame update
     void Start()
     {
