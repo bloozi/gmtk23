@@ -11,7 +11,6 @@ public class HandHealth : MonoBehaviour
     void Start()
     {
         currentHealth = maxHealth;
-        healthBar = GetComponentInChildren<HealthBar>();
         healthBar.UpdateHealthBar(currentHealth, maxHealth);
         
     }
