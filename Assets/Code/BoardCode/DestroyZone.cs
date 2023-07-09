@@ -9,7 +9,7 @@ public class DestroyZone : MonoBehaviour
     {
         if (other.name.Contains("Clone"))
         {
-            Debug.Log("Destorying object: " + other.name);
+            //Debug.Log("Destorying object: " + other.name);
             Destroy(other.gameObject);
         }
     }

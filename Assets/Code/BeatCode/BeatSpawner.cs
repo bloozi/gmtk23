@@ -34,12 +34,12 @@ public class BeatSpawner : MonoBehaviour
         }
         else if (Input.GetKeyDown(KeyCode.J))
         {
-            newBeat = CreateBeat(gBeat, "green");
+            newBeat = CreateBeat(gBeat, "blue");
             SpawnBeat(newBeat);
         }
         else if (Input.GetKeyDown(KeyCode.K))
         {
-            newBeat = CreateBeat(bBeat, "blue");
+            newBeat = CreateBeat(bBeat, "green");
             SpawnBeat(newBeat);
         }
     }
