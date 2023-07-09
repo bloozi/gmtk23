@@ -10,10 +10,10 @@ public class TakeDamage : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.name.Contains("Beat"))
+        if (other.name.Contains("hand-fYellow"))
         {
             Debug.Log(other.name);
-            other.GetComponent<BoardHealth>().TakeDamage(damageAmount);
+            other.GetComponent<HandHealth>().TakeDamage(damageAmount);
         }
         else if (other.name=="board")
         {
