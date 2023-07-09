@@ -10,17 +10,11 @@ public class TakeDamage : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.name.Contains("hand-fYellow"))
+        if (other.name.Contains("health-zone"))
         {
             Debug.Log(other.name);
             other.GetComponent<HandHealth>().TakeDamage(damageAmount);
         }
-        else if (other.name=="board")
-        {
-            Debug.Log(other.name);
-            other.GetComponent<BoardHealth>().TakeDamage(damageAmount);
-        }
-        
     }
 
    
